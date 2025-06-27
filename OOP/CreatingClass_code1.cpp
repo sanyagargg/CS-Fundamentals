@@ -11,16 +11,26 @@ private:
 //using public access modifier
 public:
     //creating a constructor (name is same as object and no return type) this is a non-parameterized constructor
-    //Teacher(){
-    //    dept = "CS";
-    //}
+    Teacher(){
+        dept = "CS";
+    }
+    //both parameterized and non parameterized constructors can coexist - constructor overloading (concept of polymorphism)
 
     //creating a parameterized constructor
-    Teacher(string n, string d, string s, double sal) {
-        name = n;
-        dept = d;
-        subject = s;
-        salary = sal;
+    //Teacher(string n, string d, string s, double sal) {
+    //    name = n;
+    //    dept = d;
+    //    subject = s;
+    //    salary = sal;
+    //}
+
+    //need for this pointer
+    Teacher(string name, string dept, string subject, double salary) {
+        // in this case writing name = name would confuse compiler (which one is the object's property???)
+        this->name = name;
+        this->dept = dept;
+        this->subject = subject;
+        this->salary = salary;
     }
 
     string name;
