@@ -38,6 +38,12 @@ public:
     double getSalary() {
         return salary;
     }
+
+    //getinfo 
+    void getInfo() {
+        cout << "department : " << dept << endl;
+        cout << "salary: " << salary << endl;
+    }
 };
 
 
@@ -47,9 +53,10 @@ int main() {
     //teacher1.dept = "Computer Science"; 
     //teacher1.subject = "OOPs";
     //teacher1.setSalary(500000000);
+    teacher1.getInfo();
     
 
-    cout << teacher1.dept << endl;
-    cout << teacher1.getSalary() << endl;
+    //cout << teacher1.dept << endl;
+    //cout << teacher1.getSalary() << endl;
     return 0;
 }
