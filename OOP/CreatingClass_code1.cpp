@@ -10,6 +10,10 @@ private:
 
 //using public access modifier
 public:
+    //creating a constructor (name is same as object and no return type)
+    Teacher(){
+        cout << "Hi, I am constructor!" << endl;
+    }
     string name;
     string dept;
     string subject;
@@ -34,6 +38,8 @@ int main() {
     teacher1.dept = "Computer Science";
     teacher1.subject = "OOPs";
     teacher1.setSalary(500000000);
+    
+    Teacher teacher2;
     
     cout << teacher1.name << endl;
     cout << teacher1.getSalary() << endl;
