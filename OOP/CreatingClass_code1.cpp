@@ -10,10 +10,19 @@ private:
 
 //using public access modifier
 public:
-    //creating a constructor (name is same as object and no return type)
-    Teacher(){
-        dept = "CS";
+    //creating a constructor (name is same as object and no return type) this is a non-parameterized constructor
+    //Teacher(){
+    //    dept = "CS";
+    //}
+
+    //creating a parameterized constructor
+    Teacher(string n, string d, string s, double sal) {
+        name = n;
+        dept = d;
+        subject = s;
+        salary = sal;
     }
+
     string name;
     string dept;
     string subject;
@@ -33,11 +42,11 @@ public:
 
 
 int main() {
-    Teacher teacher1;
-    teacher1.name = "Sanya";
-    //teacher1.dept = "Computer Science"; (if i dont comment this out and use constructor also, then it will print Computer Science and not CS)
-    teacher1.subject = "OOPs";
-    teacher1.setSalary(500000000);
+    Teacher teacher1("Sanya", "CS", "OOP", 500000000);
+    //teacher1.name = "Sanya";
+    //teacher1.dept = "Computer Science"; 
+    //teacher1.subject = "OOPs";
+    //teacher1.setSalary(500000000);
     
 
     cout << teacher1.dept << endl;
