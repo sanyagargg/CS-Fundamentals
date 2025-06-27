@@ -5,12 +5,15 @@ using namespace std;
 
 //defining class
 class Teacher{
+private:
+    double salary;
+    
 //using public access modifier
 public:
     string name;
     string dept;
     string subject;
-    double salary;
+
 
     //methods/member functions
     void changeDept(string newdept) {
