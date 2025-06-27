@@ -12,7 +12,7 @@ private:
 public:
     //creating a constructor (name is same as object and no return type)
     Teacher(){
-        cout << "Hi, I am constructor!" << endl;
+        dept = "CS";
     }
     string name;
     string dept;
@@ -35,13 +35,12 @@ public:
 int main() {
     Teacher teacher1;
     teacher1.name = "Sanya";
-    teacher1.dept = "Computer Science";
+    //teacher1.dept = "Computer Science"; (if i dont comment this out and use constructor also, then it will print Computer Science and not CS)
     teacher1.subject = "OOPs";
     teacher1.setSalary(500000000);
     
-    Teacher teacher2;
-    
-    cout << teacher1.name << endl;
+
+    cout << teacher1.dept << endl;
     cout << teacher1.getSalary() << endl;
     return 0;
 }
