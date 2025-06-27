@@ -63,9 +63,10 @@ int main() {
     //teacher1.dept = "Computer Science"; 
     //teacher1.subject = "OOPs";
     //teacher1.setSalary(500000000);
-    teacher1.getInfo();
+    //teacher1.getInfo();
     
-
+    Teacher teacher2(teacher1); //default copy constructor is invoked
+    teacher2.getInfo();
     //cout << teacher1.dept << endl;
     //cout << teacher1.getSalary() << endl;
     return 0;
